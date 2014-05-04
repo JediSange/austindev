@@ -10,5 +10,6 @@ Portfolio site
 - Robots.txt
 - Roll out Blog model
 - SASS it up
+- Setup hidden secret_key.py
 - Prod vs Dev
 - Google Analytics?  Do I care?
