@@ -4,7 +4,7 @@ austindev
 Portfolio site
 
 ## To-Do List
-- Setup functional views
+- Static files desu
 - UGH CHANGE ALL THE SPACES TO TABS
 - Get templates rolling
 - Cleanup Readme to have attributions
