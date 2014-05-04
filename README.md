@@ -3,7 +3,7 @@ This is my personal portfolio website.  I've taken this opportunity to play with
 
 ## Install
 
-## Build With
+## Built With
 - [Django](https://www.djangoproject.com/)
 - [SASS](http://sass-lang.com/)
 - [HTML5 Boilerplate](http://html5boilerplate.com/) via [Initializr](http://www.initializr.com/)
