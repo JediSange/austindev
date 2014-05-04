@@ -12,7 +12,8 @@ This is my personal portfolio website.  I've taken this opportunity to play with
 
 ## To-Do List
 - SASS it up
-- Restyle blog
+- Restyle
+- Add in blocks for Django
 - Setup no_sidebar layout -- Think about where we use this
 - Put in new copy
 - New headshot?
