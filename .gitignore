@@ -57,3 +57,5 @@ docs/_build/
 # Settings.py
 settings.py
 
+# SQLite
+db.sqlite3
