@@ -11,12 +11,15 @@ This is my personal portfolio website.  I've taken this opportunity to play with
 - [Google Fonts](https://www.google.com/fonts)
 
 ## To-Do List
-- UGH CHANGE ALL THE SPACES TO TABS
-- Cleanup Readme to have attributions
-- Robots.txt
-- Roll out Blog model
 - SASS it up
+- Restyle blog
+- Setup no_sidebar layout -- Think about where we use this
+- Put in new copy
+- New headshot?
+- Roll out Blog
 - Setup hidden secret_key.py
 - Prod vs Dev
+- UGH CHANGE ALL THE SPACES TO TABS
+- Robots.txt
 - Google Analytics?  Do I care?
 - Make install text
