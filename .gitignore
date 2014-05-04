@@ -10,6 +10,8 @@ __pycache__/
 env/
 bin/
 build/
+local/
+include/
 develop-eggs/
 dist/
 eggs/
@@ -51,4 +53,7 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+
+# Settings.py
+settings.py
 
