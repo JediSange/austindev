@@ -54,6 +54,9 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+# SASS
+.sass-cache/
+
 # Settings.py
 settings.py
 

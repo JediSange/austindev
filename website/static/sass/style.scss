@@ -1,0 +1,174 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/* Variables */
+$color-bg: #f16529;
+$color-font: #222;
+$color-link: #f16529;
+$color-accent: #e44d26;
+$color-page-bg: #fff;
+$color-header-links: #fff;
+
+$break-mobile: 480px;
+$break-medium: 768px;
+$break-large: 1140px;
+
+$font-stack: 'Proxima Nova Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-comic: 'Comic Neue Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$side-nav-width: 190px;
+
+/* Font */
+@font-face {
+	font-family: 'Proxima Nova Regular';
+	src: url(../fonts/ProximaNova-Reg.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: 'Proxima Nova Regular';
+	src: url(../fonts/ProximaNova-Bold.ttf) format("truetype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Comic Neue Regular';
+	src: url(../fonts/ComicNeue-Regular.ttf) format("truetype");
+}
+
+body {
+	color: $color-font;
+	font-family: $font-stack;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+/* Layout */
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: $color-link;
+	&:visited {
+		color: $color-link;
+	}
+	&:hover {
+		color: $color-accent;
+	}
+}
+
+.main-container {
+	border-left: $side-nav-width solid;
+	border-color: $color-bg;
+	padding: 1.5em;
+}
+
+.main {
+	max-width: 940px;
+	font-size: 18px;
+}
+
+article {
+	header {
+		font-size: 150%;
+		font-weight: bold;
+	}
+}
+
+.side-nav {
+	background-color: $color-bg;
+	float: left;
+	padding: 10px;
+	position: fixed;
+	text-align: center;
+	width: $side-nav-width;
+
+	h1 a {
+		color: white;
+		font-weight: normal;
+	}
+
+	nav {
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		a {
+			display: block;
+			margin-bottom: 10px;
+			padding: 15px 0;
+
+			text-align: center;
+			text-decoration: none;
+			font-weight: bold;
+
+			color: $color-header-links;
+			background: $color-accent;		
+		}
+	}
+
+	.nav-icons {
+		margin-top: 2em;
+		a {
+			color: $color-header-links;
+			margin-right: 0.5em;
+			opacity: 0.5;
+			&:hover {
+				opacity: 1.0;
+			}
+			&:last-child {
+				margin-right: 0px;
+			}
+		}
+	}
+}
+
+/* Helper classes */
+.clearfix {
+	*zoom: 1;
+	&:after {
+		clear: both;
+	}
+	&:after, &:before {
+		content: " ";
+		display: table;
+	}
+}
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+/* Leftover HTML 5 Boilerplate */
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+	vertical-align: middle;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+	resize: vertical;
+}
