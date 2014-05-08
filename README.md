@@ -18,6 +18,8 @@ This is my personal portfolio website.  I've taken this opportunity to play with
 - Put in new copy
 - New headshot?
 - Roll out Blog
+- Settings for Gunicorn, Pip freeze settings
+- Finalize deploy steps
 - Setup hidden secret_key.py
 - Prod vs Dev
 - UGH CHANGE ALL THE SPACES TO TABS
