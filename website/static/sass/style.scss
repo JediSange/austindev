@@ -15,7 +15,7 @@ $break-large: 1140px;
 $font-stack: 'Proxima Nova Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-comic: 'Comic Neue Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-$side-nav-width: 190px;
+$side-nav-width: 194px;
 
 /* Font */
 @font-face {
@@ -32,6 +32,12 @@ $side-nav-width: 190px;
 @font-face {
 	font-family: 'Comic Neue Regular';
 	src: url(../fonts/ComicNeue-Regular.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: 'Comic Neue Regular';
+	src: url(../fonts/ComicNeue-Bold.ttf) format("truetype");
+	font-weight: bold;
 }
 
 body {
@@ -55,7 +61,7 @@ a {
 		color: $color-link;
 	}
 	&:hover {
-		color: $color-accent;
+		color: darken($color-link, 20%);
 	}
 }
 
@@ -105,7 +111,11 @@ article {
 			font-weight: bold;
 
 			color: $color-header-links;
-			background: $color-accent;		
+			background: $color-accent;
+
+			&:hover {
+				background: lighten($color-accent, 20%);
+			}
 		}
 	}
 

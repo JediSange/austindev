@@ -11,10 +11,7 @@ This is my personal portfolio website.  I've taken this opportunity to play with
 - [Google Fonts](https://www.google.com/fonts)
 
 ## To-Do List
-- SASS it up
-- Restyle
 - Add in blocks for Django
-- Setup no_sidebar layout -- Think about where we use this
 - Put in new copy
 - New headshot?
 - Roll out Blog
@@ -22,7 +19,7 @@ This is my personal portfolio website.  I've taken this opportunity to play with
 - Finalize deploy steps
 - Setup hidden secret_key.py
 - Prod vs Dev
-- UGH CHANGE ALL THE SPACES TO TABS
+- UGH CHANGE ALL THE SPACES TO TABS -- Should I though?
 - Robots.txt
 - Google Analytics?  Do I care?
 - Make install text

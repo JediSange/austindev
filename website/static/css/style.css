@@ -11,6 +11,10 @@
 @font-face {
   font-family: 'Comic Neue Regular';
   src: url(../fonts/ComicNeue-Regular.ttf) format("truetype"); }
+@font-face {
+  font-family: 'Comic Neue Regular';
+  src: url(../fonts/ComicNeue-Bold.ttf) format("truetype");
+  font-weight: bold; }
 body {
   color: #222222;
   font-family: "Proxima Nova Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -29,10 +33,10 @@ a {
   a:visited {
     color: #f16529; }
   a:hover {
-    color: #e44d26; }
+    color: #a93a0b; }
 
 .main-container {
-  border-left: 190px solid;
+  border-left: 194px solid;
   border-color: #f16529;
   padding: 1.5em; }
 
@@ -50,7 +54,7 @@ article header {
   padding: 10px;
   position: fixed;
   text-align: center;
-  width: 190px; }
+  width: 194px; }
   .side-nav h1 a {
     color: white;
     font-weight: normal; }
@@ -66,6 +70,8 @@ article header {
     font-weight: bold;
     color: white;
     background: #e44d26; }
+    .side-nav nav a:hover {
+      background: #ef9781; }
   .side-nav .nav-icons {
     margin-top: 2em; }
     .side-nav .nav-icons a {
