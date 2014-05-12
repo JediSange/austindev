@@ -19,7 +19,7 @@ This is my personal portfolio website.  I've taken this opportunity to play with
 - Finalize deploy steps
 - Setup hidden secret_key.py
 - Prod vs Dev
-- UGH CHANGE ALL THE SPACES TO TABS -- Should I though?
+- Change all tabs to spaces #converted
 - Robots.txt
 - Google Analytics?  Do I care?
 - Make install text
