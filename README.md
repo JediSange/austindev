@@ -8,7 +8,6 @@ This is my personal portfolio website.  I've taken this opportunity to play with
 - [SASS](http://sass-lang.com/)
 - [HTML5 Boilerplate](http://html5boilerplate.com/) via [Initializr](http://www.initializr.com/)
 - [Nginx](http://nginx.com/)
-- [Google Fonts](https://www.google.com/fonts)
 
 ## To-Do List
 - Add in blocks for Django
