@@ -1,0 +1,38 @@
+{% extends "layouts/default.html" %}
+{% load staticfiles %}
+
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<div>This is a small collection of work I've done throughout the years.  It will mostly be web development, but I hope to soon expand this to show off some games I've made as well.</div>
+<div class="project">
+  <div class="image-container rounded-corners">
+    <a href="http://www.momsrising.org/blog"><img src="{% static 'images/projects/momsrising.jpg' %}"></a>
+  </div>
+  <strong>MomsRising Blog</strong> PHP, Drupal 7, SASS (2014)<br />
+</div>
+<div class="project">
+  <div class="image-container rounded-corners">
+    <a href="http://www.uusc.org"><img src="{% static 'images/projects/uusc.jpg' %}"></a>
+  </div>
+  <strong>Unitarian Universalist Service Committee</strong> PHP, Drupal 7, Features (2014)<br />
+</div>
+<div class="project">
+  <div class="image-container rounded-corners">
+    <a href="http://www.americaspromise.org"><img src="{% static 'images/projects/americaspromise.jpg' %}"></a>
+  </div>
+  <strong>America's Promise Alliance</strong> PHP, Drupal 7, SASS (2013-2014)<br />
+</div>
+<div class="project">
+  <div class="image-container rounded-corners">
+    <a href="http://www.shidengaming.com"><img src="{% static 'images/projects/shidengaming.jpg' %}"></a>
+  </div>
+  <strong>Shiden Gaming</strong> PHP, phpBB (2013)<br />
+</div>
+<div class="project">
+  <div class="image-container rounded-corners">
+    <a href="http://www.gameskinny.com"><img src="{% static 'images/projects/gameskinny.jpg' %}"></a>
+  </div>
+  <strong>GameSkinny</strong> PHP, Nginx, Zend Framework (2013)<br />
+</div>
+{% endblock %}

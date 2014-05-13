@@ -5,14 +5,16 @@ This is my personal portfolio website.  I've taken this opportunity to play with
 
 ## Built With
 - [Django](https://www.djangoproject.com/)
-- [SASS](http://sass-lang.com/)
+- [Django Markdown Deux](https://github.com/trentm/django-markdown-deux)
+- [Gunicorn](http://gunicorn.org/)
 - [HTML5 Boilerplate](http://html5boilerplate.com/) via [Initializr](http://www.initializr.com/)
 - [Nginx](http://nginx.com/)
-- [Google Fonts](https://www.google.com/fonts)
+- [SASS](http://sass-lang.com/)
 
 ## To-Do List
-- Add in blocks for Django
-- Put in new copy
+- Collapse nav for mobile
+- Use Nginx to serve static files with microcaching
+- Update Nginx to server certain folders from different directories IE: status
 - New headshot?
 - Roll out Blog
 - Settings for Gunicorn, Pip freeze settings

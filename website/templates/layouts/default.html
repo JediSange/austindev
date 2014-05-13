@@ -1,86 +1,76 @@
 {% load staticfiles %}
+{% load markdown_deux_tags %}
 <!DOCTYPE html>
 <html class="no-js">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title></title>
+  <title>AustinDev.me</title>
 
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-		<link rel="stylesheet" href="{% static "css/normalize.min.css" %} ">
-		<link rel="stylesheet" href="{% static "css/style.css" %} ">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static "css/normalize.min.css" %} ">
+  <link rel="stylesheet" href="{% static "css/style.css" %} ">
 
-		<!--[if lt IE 9]>
-		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-	</head>
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
 
-	<body>
-		<div class="side-nav">
-			<h1 class="title"><a href="/">AustinDev</a></h1>
-			<nav>
-				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Web Dev</a></li>
-				</ul>
-			</nav>
-			<div class="nav-icons">
-				<a title="Resume" href="#"><i class="fa fa-file-text fa-2x"></i></a>	
-				<a title="GitHub" href="https://github.com/jedisange"><i class="fa fa-github fa-2x"></i></a>
-				<a title="Facebook" href="https://www.facebook.com/jedisange"><i class="fa fa-facebook-square fa-2x"></i></a>
-				<a title="Twitter" href="https://twitter.com/jedisange"><i class="fa fa-twitter fa-2x"></i></a>
-			</div>
-		</div>
+<body>
+  <div class="side-nav">
+    <h1 class="title"><a href="/">AustinDev</a></h1>
+    <nav>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/webdev">Web Dev</a></li>
+      </ul>
+    </nav>
+    <div class="nav-icons">
+      <a title="Resume" href="{% static 'resume/Resume201405.pdf' %}"><i class="fa fa-file-text fa-2x"></i></a>	
+      <a title="GitHub" href="https://github.com/jedisange"><i class="fa fa-github fa-2x"></i></a>
+      <a title="Facebook" href="https://www.facebook.com/jedisange"><i class="fa fa-facebook-square fa-2x"></i></a>
+      <a title="Twitter" href="https://twitter.com/jedisange"><i class="fa fa-twitter fa-2x"></i></a>
+    </div>
+  </div>
 
-		<div class="main-container">
-			<div class="main wrapper clearfix">
-				<article>
-					<header>This is a title</header>
-					<section>
-					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-					<ul>
-						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-						<li>Aliquam tincidunt mauris eu risus.</li>
-						<li>Vestibulum auctor dapibus neque.</li>
-					</ul>
-					<dl>
+  <div class="main-container">
+    <div class="main wrapper clearfix">
+      <article>
+        <header>{% block title %}Welcome to my site!{% endblock %}</header>
+        <section>
+          {% block content %}
+            <p>This is my place on the web -- my portfolio, my resume, and the place where I will ramble about nonsense that hopefully others care about.  It is made using a very fun stack, powered by Django, Gunicorn, and HTML5 Boilerplate.  You can find out more by checking out the <a href="https://github.com/JediSange/austindev">Git Repo</a>.</p>
 
-					<dt>Definition list</dt>
-					<dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-					commodo consequat.</dd>
-					<dt>Lorem ipsum dolor sit amet</dt>
-					<dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-					commodo consequat.</dd>
-					</dl>
+            <h2>Current Projects</h2>
+            <ul>
+              <li>This site!  The blog functionality is next to come</li>
+              <li><a href="http://phaser.io/">Phaser</a> game development inspired by <a href="http://www.lessmilk.com/">lessmilk</a></li>
+              <li>Drupal 8 with Backbone.js (it's core in D8!)</li>
+              <li>Learning <a href="http://www.vagrantup.com/">Vagrant</a> and <a href="http://www.getchef.com/chef/">Chef</a></li>
+            </ul>
+          {% endblock %}
+        </section>
+      </article>
+    </div> <!-- #main -->
+  </div> <!-- #main-container -->
 
-					<strong>Strong text</strong>
-
-					<p>Pellentesque <a href="#">habitant morbi tristique</a> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-					</section>
-				</article>
-			</div> <!-- #main -->
-		</div> <!-- #main-container -->
-
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="{% static "js/vendor/jquery-2.1.0.min.js" %}"><\/script>')</script>
-		<!--
-		<script>
-		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-		e.src='//www.google-analytics.com/analytics.js';
-		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-		ga('create','UA-XXXXX-X');ga('send','pageview');
-		</script>
-		-->
-	</body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="{% static "js/vendor/jquery-2.1.0.min.js" %}"><\/script>')</script>
+  {% block scripts %}{% endblock %}
+<!--
+<script>
+(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+e.src='//www.google-analytics.com/analytics.js';
+r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+-->
+</body>
 </html>

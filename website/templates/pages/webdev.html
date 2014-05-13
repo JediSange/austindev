@@ -1,0 +1,40 @@
+{% extends "layouts/default.html" %}
+{% load markdown_deux_tags %}
+
+{% block title %}Web Development{% endblock %}
+
+{% block content %} {% markdown trusted %}
+Out of my ten years of programming, the better part of last three have been spent as a professional web developer.  During which I have had the opportunity to meet incredible people in my field and work with amazing companies.  This is an overview of my skills as well as a history of my work in the field.
+
+**Technical Skills**
+<table>
+<tr><td>Web Languages</td><td>PHP 5.4+ / HTML5 / CSS3 / JavaScript / Python</td></tr>
+<tr><td>Modern Stack</td><td>Linux / Nginx / MySQL / MongoDB / Memcached</td></tr>
+<tr><td>Dev Tools</td><td>Sublime / Git / SASS / LESS</td></tr>
+<tr><td>Libraries</td><td>PHPActiveRecord / JQuery</td></tr>
+<tr><td>CMS/Frameworks</td><td>Zend Framework / Drupal 7 / Django</td></tr>
+</table>
+
+## **Experience**  
+**Software Architect,** *EchoDitto*  
+*November 2013 - Present*  
+· Develop web solutions using PHP powered by Drupal  
+· Robust front-end experience with SASS and Backbone.js  
+· Work directly on client projects to meet deadlines and respond to business needs  
+· Focus on social good clients such as World Food Program USA, MomsRising, and The Wilderness Society  
+
+**Application Developer,** *Guild Launch LLC.*  
+*June 2012 – August 2013*  
+· Developed new features and maintained code health utilizing PHP  
+· Responsible for writing and optimizing complex queries in MySQL  
+· Hosted over 300,000 private social networks with more than 3 million users  
+· Created an API end-point for third party authentication using RSA encryption  
+· Migrated file system over to Amazon's S3 services, cutting server costs by ~30%  
+· Conducted and wrote usability tests with user experience team  
+· Wrote and maintained documentation such as patch notes and heuristic tests  
+
+**Academic Researcher,** *University of Virginia*  
+*May 2011 – September 2011*    
+· Invited to do research with professor Dr. David Evans  
+· Developed GuardRails and presented it at USENIX Security '11  
+{% endmarkdown %} {% endblock %}
