@@ -6,10 +6,12 @@ This is my personal portfolio website.  I've taken this opportunity to play with
 ## Built With
 - [Django](https://www.djangoproject.com/)
 - [Django Markdown Deux](https://github.com/trentm/django-markdown-deux)
-- [Gunicorn](http://gunicorn.org/)
 - [HTML5 Boilerplate](http://html5boilerplate.com/) via [Initializr](http://www.initializr.com/)
-- [Nginx](http://nginx.com/)
 - [SASS](http://sass-lang.com/)
+
+## Runs on
+- [Nginx](http://nginx.com/)
+- [Gunicorn](http://gunicorn.org/)
 
 ## To-Do List
 - Collapse nav for mobile
@@ -21,7 +23,7 @@ This is my personal portfolio website.  I've taken this opportunity to play with
 - Finalize deploy steps
 - Setup hidden secret_key.py
 - Prod vs Dev
-- UGH CHANGE ALL THE SPACES TO TABS -- Should I though?
+- Change all tabs to spaces #converted
 - Robots.txt
 - Google Analytics?  Do I care?
 - Make install text
