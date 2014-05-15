@@ -1,5 +1,5 @@
 # AustinDev.me
-This is my personal portfolio website.  I've taken this opportunity to play with a lot of new technology that I've been wanting to explore.  Feel free to look at the code!
+This is my personal portfolio website.  I've taken this opportunity to play with a lot of new technology that I've been wanting to explore.  Feel free to look at the code!  It should work perfectly on any modern device, sans the Web Dev page (howtotable.png).  Please let me know if you have any issues with it.  Thanks!
 
 ## Install
 
@@ -14,16 +14,15 @@ This is my personal portfolio website.  I've taken this opportunity to play with
 - [Gunicorn](http://gunicorn.org/)
 
 ## To-Do List
-- Collapse nav for mobile
-- Use Nginx to serve static files with microcaching
-- Update Nginx to server certain folders from different directories IE: status
-- New headshot?
 - Roll out Blog
 - Settings for Gunicorn, Pip freeze settings
-- Finalize deploy steps
 - Setup hidden secret_key.py
+- Use Nginx to serve static files with microcaching
+- Update Nginx to server certain folders from different directories IE: status
+- Finalize deploy steps
 - Prod vs Dev
 - Change all tabs to spaces #converted
 - Robots.txt
 - Google Analytics?  Do I care?
 - Make install text
+- New headshot?

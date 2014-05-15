@@ -66,8 +66,15 @@ a {
 }
 
 .main-container {
-  margin-left: $side-nav-width;
   padding: 1.5em;
+  padding-right: 1em;
+  padding-top: 0px;
+  margin-left: 1em;
+
+  &.menu-active {
+    margin-left: $side-nav-width;
+    padding-left: 2.5em;
+  }
 }
 
 .main {
@@ -84,8 +91,10 @@ article {
 
   blockquote {
     border-left: 6px solid #ccc;
-    padding-left: 1em;
     font-style: italic;
+    padding-left: 1em;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   table {
@@ -97,7 +106,7 @@ article {
 
 .project {
   overflow: hidden;
-  width: 50%;
+  width: 100%;
   padding-right: 1em;
   padding-top: 1em;
   float: left;
@@ -123,6 +132,16 @@ article {
   }
 }
 
+.mobile-nav {
+  position: fixed;
+  left: 5px;
+  top: 5px;
+
+  &.menu-active {
+    left: 5px + $side-nav-width;
+  }
+}
+
 .side-nav {
   background-color: $color-bg;
   float: left;
@@ -131,6 +150,11 @@ article {
   text-align: center;
   width: $side-nav-width;
   height: 100%;
+  display: none; //mobile first
+
+  &.menu-active {
+    display: block;
+  }
 
   h1 a {
     color: white;
@@ -166,9 +190,11 @@ article {
       color: $color-header-links;
       margin-right: 0.5em;
       opacity: 0.5;
+
       &:hover {
         opacity: 1.0;
       }
+
       &:last-child {
         margin-right: 0px;
       }
@@ -208,9 +234,31 @@ article {
 }
 
 /* Media Queries */
-@media (max-width: $break-mobile) {
+@media (min-width: $break-medium) {
+  .side-nav {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .main-container {
+    margin-left: $side-nav-width;
+    padding: 1.5em;
+  }
+}
+
+@media (min-width: $break-large) {
   .project {
-    width: 100%;
+    width: 50%;
+  }
+
+  article {
+    blockquote {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
   }
 }
 

@@ -36,8 +36,13 @@ a {
     color: #a93a0b; }
 
 .main-container {
-  margin-left: 194px;
-  padding: 1.5em; }
+  padding: 1.5em;
+  padding-right: 1em;
+  padding-top: 0px;
+  margin-left: 1em; }
+  .main-container.menu-active {
+    margin-left: 194px;
+    padding-left: 2.5em; }
 
 .main {
   max-width: 940px;
@@ -49,14 +54,16 @@ article header {
   font-weight: bold; }
 article blockquote {
   border-left: 6px solid #ccc;
+  font-style: italic;
   padding-left: 1em;
-  font-style: italic; }
+  margin-left: 0px;
+  margin-right: 0px; }
 article table td {
   padding-right: 1em; }
 
 .project {
   overflow: hidden;
-  width: 50%;
+  width: 100%;
   padding-right: 1em;
   padding-top: 1em;
   float: left;
@@ -73,6 +80,13 @@ article table td {
     .project img:hover {
       opacity: 1.0; }
 
+.mobile-nav {
+  position: fixed;
+  left: 5px;
+  top: 5px; }
+  .mobile-nav.menu-active {
+    left: 199px; }
+
 .side-nav {
   background-color: #f16529;
   float: left;
@@ -80,7 +94,10 @@ article table td {
   position: fixed;
   text-align: center;
   width: 194px;
-  height: 100%; }
+  height: 100%;
+  display: none; }
+  .side-nav.menu-active {
+    display: block; }
   .side-nav h1 a {
     color: white;
     font-weight: normal; }
@@ -134,9 +151,23 @@ article table td {
   border-radius: 10px; }
 
 /* Media Queries */
-@media (max-width: 480px) {
+@media (min-width: 768px) {
+  .side-nav {
+    display: block; }
+
+  .mobile-nav {
+    display: none; }
+
+  .main-container {
+    margin-left: 194px;
+    padding: 1.5em; } }
+@media (min-width: 1140px) {
   .project {
-    width: 100%; } }
+    width: 50%; }
+
+  article blockquote {
+    margin-left: 40px;
+    margin-right: 40px; } }
 /* Leftover HTML 5 Boilerplate */
 hr {
   display: block;
