@@ -15,6 +15,7 @@ This is my personal portfolio website.  I've taken this opportunity to play with
 
 ## To-Do List
 - Roll out Blog
+- Break up SASS files -- Variables, Layout, Helper, Queries
 - Settings for Gunicorn, Pip freeze settings
 - Setup hidden secret_key.py
 - Use Nginx to serve static files with microcaching
