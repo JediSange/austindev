@@ -29,10 +29,10 @@ python manage.py runserver
 
 ## To-Do List
 - Roll out Blog
+- Switch to compass/bundler/breakpoint with SASS
 - Break up SASS files -- Variables, Layout, Helper, Queries
 - Settings for Gunicorn
 - Setup hidden secret_key.py
-- Use Nginx to serve static files with microcaching
 - Update Nginx to server certain folders from different directories IE: status
 - Finalize deploy steps
 - Prod vs Dev

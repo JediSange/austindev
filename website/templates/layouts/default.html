@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{% static "css/style.css" %} ">
 
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script async src="//html5shiv.googlecoede.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
 
@@ -47,7 +47,7 @@
           <header>{% block title %}Welcome to my site!{% endblock %}</header>
           <section>
             {% block content %}
-              <p>This is my place on the web -- my portfolio, my resume, and the place where I will ramble about nonsense that hopefully others care about.  It is made using a very fun stack, powered by Django, Gunicorn, and HTML5 Boilerplate.  You can find out more by checking out the <a href="https://github.com/JediSange/austindev">GitHub repo</a>.</p>
+              <p>This is my place on the web -- my portfolio, my resume, and the place where I will ramble about nonsense that hopefully others care about.  It is made using a very fun stack, powered by Django, Gunicorn, and HTML5 Boilerplate.  You can find out more by checking out the <a href="https://github.com/JediSange/austindev">git repo</a>.</p>
 
               <h2>Current Projects</h2>
               <ul>
@@ -63,9 +63,11 @@
     </div> <!-- #main-container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{% static "js/vendor/jquery-2.1.0.min.js" %}"><\/script>')</script>
-    <script src="{% static "js/responsive.js" %}"></script>
+    <script>window.jQuery || document.write('<script src="{% static "js/vendor/jquery-2.1.0-min.js" %}"><\/script>')</script>
+    <script async src="{% static "js/responsive.js" %}"></script>
     {% block scripts %}{% endblock %}
+
+
   <!--
   <script>
   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

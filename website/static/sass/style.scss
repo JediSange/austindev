@@ -13,9 +13,9 @@ $break-medium: 768px;
 $break-large: 1140px;
 
 $font-stack: 'Proxima Nova Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-comic: 'Comic Neue Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 $side-nav-width: 194px;
+$main-width: 940px;
 
 /* Font */
 @font-face {
@@ -26,17 +26,6 @@ $side-nav-width: 194px;
 @font-face {
   font-family: 'Proxima Nova Regular';
   src: url(../fonts/ProximaNova-Bold.ttf) format("truetype");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Comic Neue Regular';
-  src: url(../fonts/ComicNeue-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'Comic Neue Regular';
-  src: url(../fonts/ComicNeue-Bold.ttf) format("truetype");
   font-weight: bold;
 }
 
@@ -78,7 +67,7 @@ a {
 }
 
 .main {
-  max-width: 940px;
+  max-width: $main-width;
   font-size: 18px;
   margin: 0px auto;
 }

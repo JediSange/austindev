@@ -8,13 +8,6 @@
   font-family: 'Proxima Nova Regular';
   src: url(../fonts/ProximaNova-Bold.ttf) format("truetype");
   font-weight: bold; }
-@font-face {
-  font-family: 'Comic Neue Regular';
-  src: url(../fonts/ComicNeue-Regular.ttf) format("truetype"); }
-@font-face {
-  font-family: 'Comic Neue Regular';
-  src: url(../fonts/ComicNeue-Bold.ttf) format("truetype");
-  font-weight: bold; }
 body {
   color: #222222;
   font-family: "Proxima Nova Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
