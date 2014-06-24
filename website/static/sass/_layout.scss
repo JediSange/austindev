@@ -1,0 +1,143 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $color-link;
+  &:visited {
+    color: $color-link;
+  }
+  &:hover {
+    color: darken($color-link, 20%);
+  }
+}
+
+.main-container {
+  padding: 1.5em;
+  padding-right: 1em;
+  padding-top: 0px;
+  margin-left: 1em;
+
+  &.menu-active {
+    margin-left: $side-nav-width;
+    padding-left: 2.5em;
+  }
+
+  @include breakpoint($break-medium) {
+    margin-left: $side-nav-width;
+    padding: 1.5em;
+  }
+}
+
+.main {
+  max-width: $main-width;
+  font-size: 18px;
+  margin: 0px auto;
+}
+
+article {
+  header {
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  blockquote {
+    border-left: 6px solid #ccc;
+    font-style: italic;
+    padding-left: 1em;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    @include breakpoint($break-large) {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+
+  table {
+    td {
+      padding-right: 1em;
+    }
+  }
+}
+
+.mobile-nav {
+  position: fixed;
+  left: 5px;
+  top: 5px;
+
+  &.menu-active {
+    left: 5px + $side-nav-width;
+  }
+
+  @include breakpoint($break-medium) {
+    display: none; 
+  }
+}
+
+.side-nav {
+  background-color: $color-bg;
+  float: left;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  width: $side-nav-width;
+  height: 100%;
+  display: none; //mobile first
+
+  @include breakpoint($break-medium) {
+    display: block;
+  }
+
+  &.menu-active {
+    display: block;
+  }
+
+  h1 a {
+    color: white;
+    font-weight: normal;
+  }
+
+  nav {
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      display: block;
+      margin-bottom: 10px;
+      padding: 15px 0;
+
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+
+      color: $color-header-links;
+      background: $color-accent;
+
+      &:hover {
+        background: lighten($color-accent, 20%);
+      }
+    }
+  }
+
+  .nav-icons {
+    margin-top: 2em;
+    a {
+      color: $color-header-links;
+      margin-right: 0.5em;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 1.0;
+      }
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.project {
+  overflow: hidden;
+  width: 100%;
+  padding-right: 1em;
+  padding-top: 1em;
+  float: left;
+  box-sizing: border-box;
+
+  &:nth-child(even) {
+    clear: left;
+  } 
+
+  .image-container {
+    max-height: 260px;
+    margin-bottom: 1em;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1.0;
+    }
+  }
+
+  @include breakpoint($break-large) {
+    width: 50%;
+  }
+}

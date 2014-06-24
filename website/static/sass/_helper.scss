@@ -1,0 +1,29 @@
+.clearfix {
+  *zoom: 1;
+  &:after {
+    clear: both;
+  }
+  &:after, &:before {
+    content: " ";
+    display: table;
+  }
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.rounded-corners {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}

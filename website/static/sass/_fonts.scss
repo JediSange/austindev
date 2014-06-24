@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url(../fonts/ProximaNova-Reg.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url(../fonts/ProximaNova-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+
+body {
+  color: $color-font;
+  font-family: $font-stack;
+  font-size: 16px;
+  line-height: 1.4;
+}

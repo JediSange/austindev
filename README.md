@@ -18,6 +18,9 @@ python manage.py runserver
 *TODO: change to gunicorn*  
 
 ## Built With
+- [Breakpoint](http://breakpoint-sass.com/)
+- [Bundler](http://bundler.io/)
+- [Compass](http://compass-style.org/)
 - [Django](https://www.djangoproject.com/)
 - [Django Markdown Deux](https://github.com/trentm/django-markdown-deux)
 - [HTML5 Boilerplate](http://html5boilerplate.com/) via [Initializr](http://www.initializr.com/)
@@ -29,8 +32,6 @@ python manage.py runserver
 
 ## To-Do List
 - Roll out Blog
-- Switch to compass/bundler/breakpoint with SASS
-- Break up SASS files -- Variables, Layout, Helper, Queries
 - Settings for Gunicorn
 - Setup hidden secret_key.py
 - Update Nginx to server certain folders from different directories IE: status
