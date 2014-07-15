@@ -62,3 +62,6 @@ settings.py
 
 # SQLite
 db.sqlite3
+
+#Public dir
+website/public/*
