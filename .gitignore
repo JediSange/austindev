@@ -58,7 +58,7 @@ docs/_build/
 .sass-cache/
 
 # Secret Key
-secret_key.py
+environment.py
 
 # SQLite
 db.sqlite3
