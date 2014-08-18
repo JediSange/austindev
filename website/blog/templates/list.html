@@ -1,0 +1,37 @@
+{% extends "layouts/default.html" %}
+
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+<p>This is my personal blog.  It will be a place where I post about programming, gaming, and anything else I find interesting.  Any opinions expressed here are mine and mine alone.  They do not reflect that of former or current employers.  Hopefully you find something here worth your time!</p>
+
+<ul class="blog-list">
+  {% for post in posts %}
+    <li>
+      <div class="blog-list-header">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="blog-list-time">{{ post.created|date:"DATE_FORMAT" }}</span>
+      </div>
+      <div class="blog-list-teaser">{{ post.body|truncatewords:100 }}</div>
+    </li>
+  {% empty %}
+    <p>I haven't made any blog posts yet!</p>
+  {% endfor %}
+</ul>
+
+{% if posts.paginator.num_pages > 1 %}
+  <div class="pagination">
+    {% if posts.has_previous %}
+      <a href="/blog/{{ posts.previous_page_number }}"><<</a>
+    {% endif %}
+
+    <span class="current">
+      Page {{ posts.number }} of {{ posts.paginator.num_pages }}
+    </span>
+
+    {% if posts.has_next %}
+      <a href="/blog/{{ posts.next_page_number }}">>></a>
+    {% endif %}
+  </div>
+{% endif %}
+{% endblock %}
