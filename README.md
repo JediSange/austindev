@@ -48,7 +48,6 @@ sudo service nginx restart
 ## To-Do List
 - Google Analytics
 - Settings for Gunicorn
-- Prod vs Dev
 - Change all tabs to spaces #converted
 - Robots.txt?
 - Make install text - Finalize deploy steps
