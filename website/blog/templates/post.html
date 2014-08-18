@@ -1,0 +1,26 @@
+{% extends "layouts/default.html" %}
+{% load markdown_deux_tags %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+  <div class="post-date">{{ post.created|date:"DATE_FORMAT" }}</div>
+  <div class="post-body">{% markdown %}{{ post.body }}{% endmarkdown %}</div>
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      //Disqus Vars
+      var disqus_shortname = 'austindev';
+      var disqus_identifier = '{{ post.slug }}';
+
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  <div class="post-back"><a href="/blog"><< Back</a></div>
+{% endblock %}

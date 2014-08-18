@@ -273,3 +273,49 @@ fieldset {
 textarea {
   resize: vertical;
 }
+
+/* line 1, ../sass/_blog.scss */
+.blog-list {
+  list-style: none;
+  margin-top: 2em;
+  padding: 0px;
+}
+/* line 6, ../sass/_blog.scss */
+.blog-list li {
+  margin-bottom: 2em;
+}
+/* line 11, ../sass/_blog.scss */
+.blog-list .blog-list-header a {
+  font-size: 125%;
+}
+@media (min-width: 768px) {
+  /* line 15, ../sass/_blog.scss */
+  .blog-list .blog-list-header .blog-list-time {
+    float: right;
+  }
+}
+/* line 22, ../sass/_blog.scss */
+.blog-list .blog-list-teaser {
+  clear: both;
+}
+
+/* line 27, ../sass/_blog.scss */
+.pagination {
+  text-align: center;
+}
+/* line 30, ../sass/_blog.scss */
+.pagination span {
+  margin: 0.5em;
+}
+
+/* line 35, ../sass/_blog.scss */
+#disqus_thread {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+  /* line 35, ../sass/_blog.scss */
+  #disqus_thread {
+    margin: 1em 3em;
+  }
+}

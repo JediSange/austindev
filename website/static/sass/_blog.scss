@@ -1,0 +1,42 @@
+.blog-list {
+  list-style: none;
+  margin-top: 2em;
+  padding: 0px;
+
+  li {
+    margin-bottom: 2em;
+  }
+
+  .blog-list-header {
+    a {
+      font-size: 125%;
+    }
+
+    .blog-list-time {
+      @include breakpoint($break-medium) {
+        float: right;
+      }
+    }
+  }
+
+  .blog-list-teaser {
+    clear: both;
+  }
+}
+
+.pagination {
+  text-align: center;
+
+  span {
+    margin: 0.5em;
+  }
+}
+
+#disqus_thread {
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  @include breakpoint($break-medium) {
+    margin: 1em 3em;  
+  }
+}
