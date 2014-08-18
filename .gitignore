@@ -62,3 +62,6 @@ secret_key.py
 
 # SQLite
 db.sqlite3
+
+#Public dir
+website/public/*
