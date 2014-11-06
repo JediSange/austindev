@@ -21,6 +21,9 @@ cd austindev.me
 source bin/activate  
 pip install -r config/pip.requirements  
 cd website  
+cp website/environment.py.default website/environment.py
+python manage.py syncdb
+python manage.py migrate
 python manage.py runserver  
 ```
 
