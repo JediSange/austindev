@@ -49,7 +49,6 @@ sudo service nginx restart
 - [Gunicorn](http://gunicorn.org/)
 
 ## To-Do List
-- Add "Published" flag for posts, admin account only can view them in listing
 - Google Analytics
 - Settings for Gunicorn
 - Change all tabs to spaces #converted

@@ -5,9 +5,10 @@ from django.template.defaultfilters import slugify
 
 class Post(models.Model):
   title = models.CharField(max_length=255)
-  slug = models.SlugField(max_length=255, null=True, blank=True)
+  slug = models.SlugField(max_length=255, blank=True)
   author = models.ForeignKey(User, related_name='blog_posts')
   created = models.DateTimeField(auto_now_add=True)
+  published = models.BooleanField(default=False)
   body = models.TextField()
 
   def __unicode__(self):
