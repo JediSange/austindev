@@ -119,7 +119,11 @@ article {
       background: $color-accent;
 
       &:hover {
-        background: lighten($color-accent, 20%);
+        background: $color-nav-hover;
+      }
+
+      &.active {
+        background: $color-nav-active;
       }
     }
   }

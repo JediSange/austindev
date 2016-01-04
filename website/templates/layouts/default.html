@@ -20,26 +20,7 @@
   </head>
 
   <body>
-    <div class="mobile-nav">
-      <a href="#"><i class="fa fa-bars fa-2x"></i></a>
-    </div>
-    <div class="side-nav">
-      <h1 class="title"><a href="/">AustinDev</a></h1>
-      <nav>
-        <ul>
-          <li><a href="/about">About</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/webdev">Web Dev</a></li>
-        </ul>
-      </nav>
-      <div class="nav-icons">
-        <a title="Resume" href="{% static 'resume/Resume201405.pdf' %}"><i class="fa fa-file-text fa-2x"></i></a>	
-        <a title="GitHub" href="https://github.com/jedisange"><i class="fa fa-github fa-2x"></i></a>
-        <a title="Facebook" href="https://www.facebook.com/jedisange"><i class="fa fa-facebook-square fa-2x"></i></a>
-        <a title="Twitter" href="https://twitter.com/jedisange"><i class="fa fa-twitter fa-2x"></i></a>
-      </div>
-    </div>
+    {% include 'partials/nav.html' %}
 
     <div class="main-container">
       <div class="main wrapper clearfix">

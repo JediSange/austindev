@@ -4,6 +4,8 @@ $color-link: #f16529;
 $color-accent: #e44d26;
 $color-page-bg: #fff;
 $color-header-links: #fff;
+$color-nav-active: lighten($color-accent, 20%);
+$color-nav-hover: lighten($color-accent, 20%);
 
 $break-mobile: 480px;
 $break-medium: 768px;

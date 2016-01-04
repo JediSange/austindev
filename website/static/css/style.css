@@ -151,21 +151,25 @@ article table td {
 .side-nav nav a:hover {
   background: #ef9781;
 }
-/* line 127, ../sass/_layout.scss */
+/* line 125, ../sass/_layout.scss */
+.side-nav nav a.active {
+  background: #ef9781;
+}
+/* line 131, ../sass/_layout.scss */
 .side-nav .nav-icons {
   margin-top: 2em;
 }
-/* line 129, ../sass/_layout.scss */
+/* line 133, ../sass/_layout.scss */
 .side-nav .nav-icons a {
   color: white;
   margin-right: 0.5em;
   opacity: 0.5;
 }
-/* line 134, ../sass/_layout.scss */
+/* line 138, ../sass/_layout.scss */
 .side-nav .nav-icons a:hover {
   opacity: 1.0;
 }
-/* line 138, ../sass/_layout.scss */
+/* line 142, ../sass/_layout.scss */
 .side-nav .nav-icons a:last-child {
   margin-right: 0px;
 }

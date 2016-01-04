@@ -1,0 +1,21 @@
+{% load staticfiles %}
+    <div class="mobile-nav">
+      <a href="#"><i class="fa fa-bars fa-2x"></i></a>
+    </div>
+    <div class="side-nav">
+      <h1 class="title"><a href="/">AustinDev</a></h1>
+      <nav>
+        <ul>
+          {# iterate over the nav items #}
+          {% for nav_item in side_nav %}
+            <li><a href="{{ nav_item.url }}"{% if nav_item.active %} class="active"{% endif %}>{{ nav_item.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <div class="nav-icons">
+        <a title="Resume" href="{% static 'resume/Resume201405.pdf' %}"><i class="fa fa-file-text fa-2x"></i></a> 
+        <a title="GitHub" href="https://github.com/jedisange"><i class="fa fa-github fa-2x"></i></a>
+        <a title="Facebook" href="https://www.facebook.com/jedisange"><i class="fa fa-facebook-square fa-2x"></i></a>
+        <a title="Twitter" href="https://twitter.com/jedisange"><i class="fa fa-twitter fa-2x"></i></a>
+      </div>
+    </div>

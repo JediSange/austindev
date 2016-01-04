@@ -3,6 +3,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from django.shortcuts import get_object_or_404
+from website.views import process_request
 
 def list(request, page):
   # Get all posts, reverse sorted by creation date
@@ -23,8 +24,8 @@ def list(request, page):
   params = {}
   params['page'] = page
   params['posts'] = posts
-  return render_to_response('list.html', params)
+  return process_request(request, 'list.html', params)
 
 def post(request, slug):
   post = get_object_or_404(Post, slug=slug)
-  return render_to_response('post.html', {'post': post})
+  return process_request(request, 'post.html', {'post': post})
