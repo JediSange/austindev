@@ -28,4 +28,4 @@ def list(request, page):
 
 def post(request, slug):
   post = get_object_or_404(Post, slug=slug)
-  return process_request(request, 'post.html', {'post': post})
+  return process_request(request, 'post.html', {'post': post}, '/blog')
