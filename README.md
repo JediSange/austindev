@@ -32,7 +32,14 @@ python manage.py runserver
 sudo apt-get install nginx  
 sudo cp /path/to/web/root/austindev.me/config/nginx.develop.conf /etc/nginx/sites-enabled/austindev.me  
 sudo service nginx restart  
+cd /path/to/repo
+screen -S austindev
+source bin/activate
+cd website
+gunicorn website.wsgi
 ```
+
+Control + A + D to exit screen
 
 ## Built With
 - [Breakpoint](http://breakpoint-sass.com/)
