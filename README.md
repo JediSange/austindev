@@ -3,7 +3,8 @@ This is my personal portfolio website.  I've taken this opportunity to play with
 
 ## Setup Python/Pip - Linux
 ```bash
-todo apt-get stuff  
+sudo apt-get install python
+sudo apt-get install python-pip
 ```
 
 ## Setup Python/Pip - Mac
