@@ -5,6 +5,7 @@ This is my personal portfolio website.  I've taken this opportunity to play with
 ```bash
 sudo apt-get install python
 sudo apt-get install python-pip
+sudo pip install virtualenv
 ```
 
 ## Setup Python/Pip - Mac
